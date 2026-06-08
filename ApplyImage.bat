@@ -7,7 +7,7 @@ rem === Copy the image to the recovery image partition =======================
 copy %1 R:\install.wim
 
 rem === Apply the image to the Windows partition =============================
-dism /Apply-Image /ImageFile:R:\install.wim /Index:1 /ApplyDir:W:\
+dism /Apply-Image /ImageFile:R:\install.wim /Index:3 /ApplyDir:W:\
 
 rem === Copy the Windows RE Tools to the Windows RE Tools partition ==========
 md T:\Recovery\WindowsRE
